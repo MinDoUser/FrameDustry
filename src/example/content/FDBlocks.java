@@ -25,7 +25,7 @@ import mindustry.world.draw.*;
 
 import static mindustry.type.ItemStack.with;
 
-public class CreatiiveBlocks implements ContentList {
+public class FDBlocks implements ContentList {
   public static Block 
     //walls
     leadwall;
