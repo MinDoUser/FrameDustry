@@ -32,7 +32,7 @@ public class FDBlocks implements ContentList {
   
   	@Override
 	public void load() {
-    
+    	//Wall
   		leadwall = new Wall("lead-wall") {{
 			requirements(Category.defense, with(Items.lead, 6));
 			localizedName = "Lead Wall";
