@@ -1,17 +1,18 @@
 #the mod name as displayed in-game
-displayName: "Java Mod Template"
+displayName: "Framedustry"
 
 #the internal name of your mod
-name: "example-java-mod"
+name: "framedustry"
 
 #your name
-author: "You"
+author: "lol02"
 
 #the fully qualified main class of the mod
+#anything else result into a "No Main Class Found" error, idk why
 main: "example.ExampleJavaMod"
 
 #the mod description as seen in the mod dialog
-description: "A Mindustry Java mod template."
+description: "A test."
 
 #the mod version
 version: 1.0
