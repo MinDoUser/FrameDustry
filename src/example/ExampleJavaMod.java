@@ -1,5 +1,6 @@
 package example;
 
+import example.content.*;
 import arc.*;
 import arc.util.*;
 import mindustry.*;
@@ -30,7 +31,7 @@ public class ExampleJavaMod extends Mod{
 
     @Override
     public void loadContent(){
-        Log.info("Loading some example content.");
+        new FDBlocks().load();
     }
 
 }
