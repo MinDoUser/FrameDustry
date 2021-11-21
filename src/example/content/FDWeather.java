@@ -33,7 +33,7 @@ public class FDWeather implements ContentList{
 			yspeed = 0.01f;
 			
 			statusAir = statusGround = true;
-			status = StatusEffect.freezing;
+			status = StatusEffects.freezing;
 			statusDuration = 60f;
 			attrs.set(Attribute.light, -0.3f);
 			opacityMultiplier = 0.47f;
