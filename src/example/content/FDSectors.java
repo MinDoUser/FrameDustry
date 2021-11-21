@@ -3,7 +3,7 @@ package example.content;
 import mindustry.ctype.*;
 import mindustry.type.*;
 
-import static example.content.*;
+//import static example.content.*;
 public class FDSectors implements ContentList{
     public static SectorPreset gluonFields;
       @Override
