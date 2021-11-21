@@ -31,9 +31,31 @@ import static mindustry.type.ItemStack.with;
 public class FDBlocks implements ContentList {
   public static Block 
     	//walls
-    	leadwall;
+    	leadwall,
+	//crafting
+	exiteSmelter;
   	@Override
 	public void load() {
+	exiteSmelter = new GenericCrafter("exite-smelter") {{
+            requirements(Category.crafting, with(
+                Items.copper, 120,
+		Items.silicon, 78
+            ));
+            localizedName = "Exite Smelter";
+            size = 2;
+            health = 80 * size * size;
+            hasItems = true;
+            drawer = new DrawSmelter();
+            craftTime = 59;
+            craftEffect = Fx.smelt;
+            consumes.items(new ItemStack(
+		    Items.silicon, 3,
+		    Items.metaglass, 1
+	    ));
+
+            consumes.power(0.9f);
+            outputItem = new ItemStack(FDItems.exite, 2);
+        }};
   		leadwall = new Wall("lead-wall") {{
 			requirements(Category.defense, with(Items.lead, 6));
 			localizedName = "Lead Wall";
