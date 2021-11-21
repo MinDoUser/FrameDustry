@@ -23,14 +23,32 @@ import mindustry.world.blocks.units.*;
 import mindustry.world.meta.*;
 import mindustry.world.draw.*;
 
+
+import example.content.*;
+import example.world.blocks.power.*;
+
 import static mindustry.type.ItemStack.with;
 
 public class FDBlocks implements ContentList {
   public static Block 
-    //walls
-    leadwall;
+    	//walls
+    	leadwall,
+	//power
+	windmill;
   	@Override
 	public void load() {
+		 windmill = new Wall("winmill") {{
+			requirements(Category.power, with(
+			Items.lead, 120,
+			Items.copper, 145,
+			Items.silicon, 20
+			));
+			localizedName = "Windmill";
+			 powerProduction = 0.75f;
+			health = 100;
+			size = 2;
+			 rotorSpeed = 3f;
+		}};
     
   		leadwall = new Wall("lead-wall") {{
 			requirements(Category.defense, with(Items.lead, 6));
