@@ -4,7 +4,7 @@ import arc.graphics.Color;
 import mindustry.ctype.ContentList;
 import mindustry.type.Item;
 
-public class FDItems extends ContentList {
+public class FDItems implements ContentList {
 	public static Item 
 	exite;
   
