@@ -8,11 +8,11 @@ public class FDItems extends ContentList {
 	public static Item 
 	exite;
   
-  	@Override
+  	//@Override
 	public void load(){
 		exite = new Item("exite", Color.valueOf("add8e6")) {{
 			localizedName = "Exite";
-			cost = 1.1;
+			cost = 1.1f;
 		}};
   }
 }
