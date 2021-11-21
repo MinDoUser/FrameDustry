@@ -1,9 +1,33 @@
 package example.world.blocks.power;
 
-import arc.math.*;
-import arc.struct.*;
 import mindustry.world.meta.*;
 import arc.util.Time;
+import arc.*;
+import arc.Core;
+import arc.audio.*;
+import arc.func.*;
+import arc.graphics.*;
+import arc.graphics.g2d.*;
+import arc.math.*;
+import arc.math.geom.*;
+import arc.struct.*;
+import arc.util.*;
+import arc.util.io.*;
+import arc.scene.ui.*;
+import arc.scene.ui.layout.*;
+import mindustry.audio.*;
+import mindustry.content.*;
+import mindustry.graphics.*;
+import mindustry.entities.*;
+import mindustry.entities.bullet.*;
+import mindustry.gen.*;
+import mindustry.graphics.*;
+import mindustry.world.meta.*;
+import mindustry.world.*;
+import mindustry.logic.*;
+import mindustry.type.*;
+import mindustry.world.draw.*;
+
 
 import static mindustry.Vars.*;
 
