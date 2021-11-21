@@ -25,7 +25,6 @@ import mindustry.world.draw.*;
 
 
 import example.content.*;
-import example.world.blocks.power.*;
 
 import static mindustry.type.ItemStack.with;
 
