@@ -9,7 +9,7 @@ import static mindustry.Vars.*;
 
 public class Windmill extends PowerGenerator {
   public float rotorSpeed = 4;
-  public TextureRegion rotorRegion, blockRegion;
+  public TextureRegion rotorRegion, blockRegion, outlineRegion;
       public Windmill(String name){
         super(name);
         //Creates a low priority for units...
@@ -19,6 +19,7 @@ public class Windmill extends PowerGenerator {
   	public void load() {
 		blockRegion = Core.atlas.find(name);
 		rotorRegion = Core.atlas.find(name + "-rotor");
+		outlineRegion = Core.atlas.find(name + "-rotor-outline");
 	}
       @Override
     public void setStats(){
@@ -32,8 +33,9 @@ public class Windmill extends PowerGenerator {
             productionEfficiency = 1f;//*wind; Need to create a map setting 'Wind' first...
         }
         public void draw(Block b) {
-          		Draw.rect(rotorRegion, b.x, b.y, Time.time * rotorSpeed);
-		          Draw.rect(blockRegion, b.x, b.y);
+		Draw.rect(blockRegion, b.x, b.y);
+          	Draw.rect(rotorRegion, b.x, b.y, Time.time * rotorSpeed);
+		Draw.rect(outlineRegion, b.x, b.y, Time.time * rotorSpeed);
         }
       }
 }
