@@ -1,13 +1,17 @@
 package example.content;
 
+import mindustry.type.StatusEffect;
 import arc.util.Time;
 import mindustry.ctype.ContentList;
 import mindustry.type.Weather;
 import mindustry.type.weather.ParticleWeather;
 import mindustry.world.meta.Attribute;
+import arc.graphics.Color;
+import arc.graphics.Colors;
+import mindustry.graphics.Pal
 
 public class FDWeather implements ContentList{
-	public static Weather quantumField;
+	public static Weather iceStorm;
 	@Override
 	public void load(){
 		iceStorm = new ParticleWeather("ice-storm"){{
