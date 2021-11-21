@@ -15,3 +15,4 @@ public class FDItems extends ContentList {
 			cost = 1.1;
 		}};
   }
+}
