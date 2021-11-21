@@ -48,10 +48,10 @@ public class FDBlocks implements ContentList {
             drawer = new DrawSmelter();
             craftTime = 59;
             craftEffect = Fx.smelt;
-            consumes.items(new ItemStack(
-		    Items.silicon, 3,
-		    Items.metaglass, 1
-	    ));
+            consumes.items(
+		    new ItemStack(Items.silicon, 3),
+		    new ItemStack(Items.metaglass, 1)
+	    );
 
             consumes.power(0.9f);
             outputItem = new ItemStack(FDItems.exite, 2);
