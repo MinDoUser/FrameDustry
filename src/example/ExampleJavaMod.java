@@ -32,6 +32,7 @@ public class ExampleJavaMod extends Mod{
     @Override
     public void loadContent(){
         new FDBlocks().load();
+        new FDWeather().load();
     }
 
 }
