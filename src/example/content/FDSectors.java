@@ -4,7 +4,7 @@ import mindustry.ctype.*;
 import mindustry.type.*;
 
 import static example.content.*;
-public class SectorPresets implements ContentList{
+public class FDSectors implements ContentList{
     public static SectorPreset gluonFields;
       @Override
     public void load(){
