@@ -8,7 +8,7 @@ import mindustry.type.weather.ParticleWeather;
 import mindustry.world.meta.Attribute;
 import arc.graphics.Color;
 import arc.graphics.Colors;
-import mindustry.graphics.Pal
+import mindustry.graphics.Pal;
 
 public class FDWeather implements ContentList{
 	public static Weather iceStorm;
