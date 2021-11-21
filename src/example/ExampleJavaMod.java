@@ -33,7 +33,7 @@ public class ExampleJavaMod extends Mod{
     public void loadContent(){
         new FDBlocks().load();
         new FDWeather().load();
-        new FDitems().load();
+        new FDItems().load();
     }
 
 }
