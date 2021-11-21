@@ -34,6 +34,9 @@ public class ExampleJavaMod extends Mod{
         new FDBlocks().load();
         new FDWeather().load();
         new FDItems().load();
+        new FDPlanets().load();
+        new FDSectors().load();
+        Log.info("Loaded all Java files.");
     }
 
 }
