@@ -10,7 +10,7 @@ public class FDSectors implements ContentList{
     public void load(){
         //region Gluon
 
-        gluonFields = new SectorPreset("coast", FDPlanets.gluon, 15){{
+        coast = new SectorPreset("coast", FDPlanets.gluon, 15){{
             alwaysUnlocked = true;
             addStartingItems = true;
             captureWave = 10;
