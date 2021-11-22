@@ -10,9 +10,6 @@ public class FDItems implements ContentList {
   
   	@Override
 	public void load(){
-		exite = new Item("exite", Color.valueOf("add8e6")) {{
-			localizedName = "Exite";
-			cost = 1.1f;
-		}};
+		exite = new Item("exite", Color.valueOf("add8e6")) {{/*localizedName = "Exite";cost = 1.1f;*/}};
   }
 }
