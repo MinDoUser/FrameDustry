@@ -7,7 +7,7 @@ import mindustry.entities.bullet.BasicBulletType;
 
 public class ArcBulletType extends BasicBulletType{
   public int lightingAmount = 10;
-  pulbic float lightningDamage = 60f;
+  public float lightningDamage = 60f;
 		public ArcBulletType(float speed, float damage, String bulletSprite, int lightnings, float lightningD) {
 		super(speed, damage, bulletSprite);
     this.lightningAmount = lightnings;
