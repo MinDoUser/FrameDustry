@@ -7,7 +7,7 @@ import mindustry.entities.bullet.BasicBulletType;
 
 public class ArcBulletType extends BasicBulletType{
   public int lightingAmount = 10;
-  pulbic float lightningDamage = 60;
+  pulbic float lightningDamage = 60f;
 		public ArcBulletType(float speed, float damage, String bulletSprite, int lightnings, float lightningD) {
 		super(speed, damage, bulletSprite);
     this.lightningAmount = lightnings;
@@ -19,7 +19,7 @@ public class ArcBulletType extends BasicBulletType{
   @Override
   public void update(Bullet b){
     for(int x; x<=lightningAmount; x++){
-    Lightning.create(b.team, Color.valueOf("ffffff"), lightningDamage, b.x, b.y, 40);
+    Lightning.create(b.team, Color.valueOf("ffffff"), lightningDamage, b.x, b.y, 40f);
     }
     super.update(b);
   }
