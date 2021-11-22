@@ -23,7 +23,7 @@ public class ArcBulletType extends BasicBulletType{
   @Override
   public void update(Bullet b){
     for(int x; x<=lightningAmount; x++){
-    Lightning.create(b.team, Color.valueOf("ffffff"), lightningDamage, b.x, b.y, 40f);
+    Lightning.create(b.team, Color.valueOf("ffffff"), lightningDamage, b.x, b.y, Mathf.random()*360, 40f);
     }
     super.update(b);
   }
