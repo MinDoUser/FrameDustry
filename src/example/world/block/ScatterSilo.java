@@ -34,7 +34,7 @@ public class ScatterSilo extends Block {
     
     public int shots = 10;
 
-    public ScatterBlock(String name) {
+    public ScatterSilo(String name) {
         super(name);
         destructible = true;
         hasItems = true;
