@@ -54,7 +54,7 @@ public class FDBlocks implements ContentList {
 	    );
 
             consumes.power(0.9f);
-            outputItem = with(FDItems.exite, 2);
+            outputItem = new ItemStack(FDItems.exite, 2);
         }};
   		leadwall = new Wall("lead-wall") {{
 			requirements(Category.defense, with(Items.lead, 6));
