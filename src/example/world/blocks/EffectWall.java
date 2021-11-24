@@ -1,7 +1,7 @@
 package example.world.blocks;
 
 import mindustry.content.*;
-import import mindustry.world.blocks.environment.*;
+import mindustry.world.blocks.environment.*;
 
 public class EffectWall extends StaticWall{
   public Effect effect = Fx.smeltsmoke;
