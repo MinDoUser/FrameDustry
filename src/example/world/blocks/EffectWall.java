@@ -1,7 +1,8 @@
 package example.world.blocks;
 
 import mindustry.content.*;
-import mindustry.content.fx;
+import mindustry.content.Fx;
+import mindustry.world.blocks.environment.*;
 import arc.*;
 import arc.graphics.g2d.*;
 import arc.math.*;
