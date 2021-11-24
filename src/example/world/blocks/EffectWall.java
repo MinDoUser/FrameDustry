@@ -1,11 +1,13 @@
 package example.world.blocks;
 
 import mindustry.content.*;
+import mindustry.content.fx;
 import arc.*;
 import arc.graphics.g2d.*;
 import arc.math.*;
 import arc.math.geom.*;
-import mindustry.annotations.Annotations.*;
+import mindustry.entities.*;
+//import mindustry.annotations.Annotations.*;
 import mindustry.graphics.*;
 import mindustry.world.*;
 
