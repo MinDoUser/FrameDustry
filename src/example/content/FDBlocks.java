@@ -26,24 +26,17 @@ import mindustry.world.draw.*;
 
 import example.content.*;
 import example.content.FDItems;
-import example.world.blocks.*;
 
 import static mindustry.type.ItemStack.with;
 
 public class FDBlocks implements ContentList {
   public static Block 
-	  //env
-	  hotWall,
     	//walls
     	leadwall,
 	//crafting
 	exiteSmelter;
   	@Override
 	public void load() {
-	hotWall = new EffectWall("hot-wall"){{
-            	variants = 2;
-		effect = Fx.magmasmoke;
-        }};
 	exiteSmelter = new GenericCrafter("exite-smelter") {{
             requirements(Category.crafting, with(
                 Items.copper, 120,
