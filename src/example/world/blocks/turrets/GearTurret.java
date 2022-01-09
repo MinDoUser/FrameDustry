@@ -8,7 +8,7 @@ import arc.util.*;
 import arc.struct.*;
 import mindustry.gen.*;
 import mindustry.world.meta.*;
-import mindustry.world.blocks.defense.turrets.BaseTurret.*;
+import mindustry.world.blocks.defense.turrets.BaseTurret;
 import mindustry.world.consumers.*;
 import mindustry.type.*;
 import mindustry.world.meta.*;
@@ -19,13 +19,14 @@ public class GearTurret extends BaseTurret {
 	public GearTurret(String name) {
 		super(name);
 	}
+	/* WIP
   	@Override
 	public void setStats() {
 		super.setStats();
 		stats.add("Speed increase/turret", 0.2f, "Reload speed");
+} */
 }
-}
-public class GearTurret extends BaseTurretBuild {
+public class GearTurretBiuld extends BaseTurretBuild {
   		public float getProximityBlocks() {
 			float mult = 0f;
 			for (int i = 0; i < this.proximity.size; i++) {
