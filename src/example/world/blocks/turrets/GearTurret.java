@@ -1,4 +1,4 @@
-package.example.world.blocks.turrets;
+package example.world.blocks.turrets;
 
 import arc.*;
 import arc.graphics.*;
@@ -35,6 +35,6 @@ public class GearTurret extends BaseTurretBuild {
 			}
 		}
       public float baseReloadSpeed() {
-        return this.efficiency() * this.getProximityBlocks()
+        return this.efficiency() * this.getProximityBlocks();
     }
 }
