@@ -1,4 +1,4 @@
-packageexample.world.blocks.turrets;
+package.example.world.blocks.turrets;
 
 import arc.*;
 import arc.graphics.*;
@@ -16,7 +16,7 @@ import mindustry.world.Block;
 
 //Speed up reloadtime by each turret next to it.
 public class GearTurret extends BaseTurret {
-	public ProximityCrafter(String name) {
+	public GearTurret(String name) {
 		super(name);
 	}
   	@Override
@@ -34,7 +34,7 @@ public class GearTurret extends BaseTurretBuild {
 				}
 			}
 		}
-      baseReloadSpeed() {
+      public float baseReloadSpeed() {
         return this.efficiency() * this.getProximityBlocks()
     }
 }
