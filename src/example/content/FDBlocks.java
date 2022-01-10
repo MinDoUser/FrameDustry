@@ -23,6 +23,8 @@ import mindustry.world.blocks.units.*;
 import mindustry.world.meta.*;
 import mindustry.world.draw.*;
 
+import example.world.blocks.logic.*;
+
 
 import example.content.*;
 import example.content.FDItems;
@@ -32,9 +34,11 @@ import static mindustry.type.ItemStack.with;
 public class FDBlocks implements ContentList {
   public static Block 
     	//walls
-    	leadwall;
+    	leadwall,
 	//crafting
 	//exiteSmelter;
+	//Logic
+	infoMessage;
   	@Override
 	public void load() {
 		/*
@@ -58,10 +62,16 @@ public class FDBlocks implements ContentList {
             consumes.power(0.9f);
             outputItem = new ItemStack(FDItems.exite, 1);
         }};*/
-  		leadwall = new Wall("lead-wall") {{
+		 infoMessage = new WaveInfoMessage("lead-wall") {{
 			requirements(Category.defense, with(Items.lead, 6));
 			localizedName = "Lead Wall";
 			health = 350;
+			size = 1;
+		}};
+  		leadwall = new Wall("lead-wall") {{
+			requirements(Category.logic, with(Items.copper, 1));
+			localizedName = "Wave Information Message";
+			health = 40;
 			size = 1;
 		}};
   }
