@@ -32,7 +32,7 @@ import static mindustry.type.ItemStack.with;
 public class FDBlocks implements ContentList {
   public static Block 
     	//walls
-    	leadwall,
+    	leadwall;
 	//crafting
 	//exiteSmelter;
   	@Override
