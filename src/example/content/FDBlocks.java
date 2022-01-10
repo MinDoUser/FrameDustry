@@ -34,9 +34,10 @@ public class FDBlocks implements ContentList {
     	//walls
     	leadwall,
 	//crafting
-	exiteSmelter;
+	//exiteSmelter;
   	@Override
 	public void load() {
+		/*
 	exiteSmelter = new GenericCrafter("exite-smelter") {{
             requirements(Category.crafting, with(
                 Items.copper, 120,
@@ -56,7 +57,7 @@ public class FDBlocks implements ContentList {
 
             consumes.power(0.9f);
             outputItem = new ItemStack(FDItems.exite, 1);
-        }};
+        }};*/
   		leadwall = new Wall("lead-wall") {{
 			requirements(Category.defense, with(Items.lead, 6));
 			localizedName = "Lead Wall";
