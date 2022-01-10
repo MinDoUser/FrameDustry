@@ -1,3 +1,4 @@
+/*WIP
 package example.world.blocks.turrets;
 
 import arc.*;
@@ -25,7 +26,6 @@ public class GearTurret extends BaseTurret {
 		super.setStats();
 		stats.add("Speed increase/turret", 0.2f, "Reload speed");
 } */
-}
 public class GearTurretBiuld extends BaseTurretBuild {
   		public float getProximityBlocks() {
 			float mult = 0f;
@@ -39,3 +39,4 @@ public class GearTurretBiuld extends BaseTurretBuild {
         return this.efficiency() * this.getProximityBlocks();
     }
 }
+}*/
