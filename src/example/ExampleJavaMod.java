@@ -18,22 +18,25 @@ public class ExampleJavaMod extends Mod{
         Log.info("Loaded[stat] FrameDustry[] constructor.");
         Log.info("So, yeah, let's have fun together, hopefully... ?");
     }
-    public static void startLog(){
-        	BaseDialog dialog = new BaseDialog("");
-
-    dialog.buttons.defaults().size(210, 64);
-   dialog.closeOnBack();
-       dialog.cont.pane(inner -> {
-
-        inner.pane(table -> {
-        table.add("[white]<< Loaded Framedustry >>", Styles.techLabel).row();
-        table.row();
-	    table.add("This Mod is still in Development! \n It adds some intresting things and other senceless stuff. \n Have Fun!").left().growX().wrap().width(620).maxWidth(620).pad(4).labelAlign(Align.left);
-	    table.row();
-        table.add("[cyan]> By lol02 <", Styles.techLabel).row();
-    })()).grow().center().maxWidth(620);
-    dialog.show();
-    }
+	public static void startScreen(){
+		BaseDialog dialog = new BaseDialog("");
+		dialog.closeOnBack();
+		dialog.cont.pane(inner -> {
+			inner.pane(table -> {
+				table.pane(p -> {
+					p.add("[white]<<< Loaded Framedustry >>>", Styles.techLabel).row();
+				}).fillY().growX().row();
+				table.add("").row();
+			}).growX().center().row();
+			
+			inner.table(table -> {
+				table.table(t -> {
+					t.add("$FD-WelcomeText")
+				}).grow();
+			}).fill();
+		}).grow();
+	dialog.show();
+}
     @Override
     public void loadContent(){
         new FDBlocks().load();
