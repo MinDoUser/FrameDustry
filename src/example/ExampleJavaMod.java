@@ -31,6 +31,7 @@ public class ExampleJavaMod extends Mod{
 				}).grow();
 			}).fill();
 		}).grow();
+		dialog.cont.button("< Ready >", dialog::hide).size(100f, 50f);
 	dialog.show();
 }
 	
