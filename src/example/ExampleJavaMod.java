@@ -28,19 +28,18 @@ public class ExampleJavaMod extends Mod{
 			inner.table(table -> {
 				table.table(t -> {
 					t.add("$FD-WelcomeText");
+					t.button("< Ready >", dialog::hide).size(150f, 100f);
 				}).grow();
 			}).fill();
 		}).grow();
-		dialog.cont.button("< Ready >", dialog::hide).size(100f, 50f);
 	dialog.show();
 }
 	
     public ExampleJavaMod(){
-        Log.info("Loaded[stat] FrameDustry[] constructor.");
-        Log.info("So, yeah, let's have fun together, hopefully... ?");
 	Events.on(ClientLoadEvent.class, e -> {
-		//Wanna knwo content of "e", so yeah.
-		Log.info("E:"+e);
+		Log.info("Loaded[stat] FrameDustry[] constructor.");
+        	Log.info("So, yeah, let's have fun together, hopefully... ?");
+		//Log.info("E:"+e);
 		startScreen();
 	});
     }
