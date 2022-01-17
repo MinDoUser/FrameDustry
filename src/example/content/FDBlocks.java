@@ -87,7 +87,7 @@ public class FDBlocks implements ContentList {
 				Items.titanium, Bullets.standardDense
             		);
 			requirements(Category.turret, with(Items.copper, 135, Items.silicon, 20, Items.graphite, 47, Items.lead, 125));
-		}
+		}}
 		 leadwall = new Wall("lead-wall") {{
 			requirements(Category.defense, with(Items.lead, 6));
 			localizedName = "Lead Wall";
