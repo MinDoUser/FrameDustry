@@ -14,10 +14,6 @@ import mindustry.ui.Styles;
 //Yep, it's not the best name, but everthing else just didn't work...
 public class ExampleJavaMod extends Mod{
 
-    public ExampleJavaMod(){
-        Log.info("Loaded[stat] FrameDustry[] constructor.");
-        Log.info("So, yeah, let's have fun together, hopefully... ?");
-    }
 	public static void startScreen(){
 		BaseDialog dialog = new BaseDialog("");
 		dialog.closeOnBack();
@@ -31,12 +27,20 @@ public class ExampleJavaMod extends Mod{
 			
 			inner.table(table -> {
 				table.table(t -> {
-					t.add("$FD-WelcomeText")
+					t.add("$FD-WelcomeText");
 				}).grow();
 			}).fill();
 		}).grow();
 	dialog.show();
 }
+	
+    public ExampleJavaMod(){
+        Log.info("Loaded[stat] FrameDustry[] constructor.");
+        Log.info("So, yeah, let's have fun together, hopefully... ?");
+	Events.on(ClientLoadEvent.class, e -> {
+		startScreen();
+	});
+    }
     @Override
     public void loadContent(){
         new FDBlocks().load();
