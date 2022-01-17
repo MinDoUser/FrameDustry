@@ -39,6 +39,8 @@ public class ExampleJavaMod extends Mod{
         Log.info("Loaded[stat] FrameDustry[] constructor.");
         Log.info("So, yeah, let's have fun together, hopefully... ?");
 	Events.on(ClientLoadEvent.class, e -> {
+		//Wanna knwo content of "e", so yeah.
+		Log.info("E:"+e);
 		startScreen();
 	});
     }
