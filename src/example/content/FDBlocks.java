@@ -73,7 +73,7 @@ public class FDBlocks implements ContentList {
 			spread = 4f;
 			velocityInaccuracy = 0.15f;
 			shots = 2;
-			reloadTime = 45f;
+			reloadTime = 24f;
 			coolantMultiplier = 0.6f;
 			recoilAmount = 4f;
 			shootShake = 2f;
