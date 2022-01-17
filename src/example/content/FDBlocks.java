@@ -33,6 +33,8 @@ import static mindustry.type.ItemStack.with;
 
 public class FDBlocks implements ContentList {
   public static Block 
+	 //turret
+	  bolt,
     	//walls
     	leadwall,
 	//crafting
@@ -62,6 +64,30 @@ public class FDBlocks implements ContentList {
             consumes.power(0.9f);
             outputItem = new ItemStack(FDItems.exite, 1);
         }};*/
+	bolt = new ItemTurret("Bolt"){{
+			size = 2;
+			health = 890;
+			range = 140f;
+			targetAir = true;
+			inaccuracy = 5f;
+			spread = 4f;
+			velocityInaccuracy = 0.15f;
+			shots = 2;
+			reloadTime = 45f;
+			coolantMultiplier = 0.6f;
+			recoilAmount = 4f;
+			shootShake = 2f;
+			shootSound = Sounds.pew;
+			ammo(
+                		Items.copper, Bullets.standardCopper,
+				Items.lead, Bullets.standardCopper,
+                		Items.graphite, Bullets.standardDense,
+                		Items.pyratite, Bullets.standardIncendiary,
+                		Items.silicon, Bullets.standardHoming,
+				Items.titanium, Bullets.standardDense
+            		);
+			requirements(Category.turret, with(Items.copper, 135, Items.silicon, 20, Items.graphite, 47, Items.lead, 125));
+		}
 		 leadwall = new Wall("lead-wall") {{
 			requirements(Category.defense, with(Items.lead, 6));
 			localizedName = "Lead Wall";
