@@ -62,13 +62,13 @@ public class FDBlocks implements ContentList {
             consumes.power(0.9f);
             outputItem = new ItemStack(FDItems.exite, 1);
         }};*/
-		 infoMessage = new WaveInfoMessage("info-message") {{
+		 leadwall = new Wall("info-message") {{
 			requirements(Category.defense, with(Items.lead, 6));
 			localizedName = "Lead Wall";
 			health = 350;
 			size = 1;
 		}};
-  		leadwall = new Wall("lead-wall") {{
+  		infoMessage = new WaveInfoMessage("lead-wall") {{
 			requirements(Category.logic, with(Items.copper, 1));
 			localizedName = "Wave Information Message";
 			health = 40;
