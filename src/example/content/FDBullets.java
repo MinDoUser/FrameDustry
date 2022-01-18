@@ -5,6 +5,8 @@ import mindustry.ctype.*;
 import mindustry.entities.bullet.*;
 import mindustry.entities.effect.*;
 import mindustry.graphics.*;
+import mindustry.ctype.ContentList;
+import mindustry.content.*;
 
 public class FDBullets implements ContentList{
     public static BulletType
