@@ -25,7 +25,7 @@ import mindustry.world.draw.*;
 
 import example.world.blocks.logic.*;
 
-
+import example.ExampleJavaMod;
 import example.content.*;
 import example.content.FDItems;
 
@@ -79,12 +79,12 @@ public class FDBlocks implements ContentList {
 			shootShake = 2f;
 			shootSound = Sounds.pew;
 			ammo(
-                		Items.copper, Bullets.standardCopper,
-				Items.lead, Bullets.standardCopper,
-                		Items.graphite, Bullets.standardDense,
-                		Items.pyratite, Bullets.standardIncendiary,
-                		Items.silicon, Bullets.standardHoming,
-				Items.titanium, Bullets.standardDense
+                		Items.copper, FDBullets.copperBig,
+				Items.lead, FDBullets.leadBig,
+                		Items.graphite, FDBullets.denseBig,
+                		Items.pyratite, FDBullets.burnBig,
+                		Items.silicon, FDBullets.homingBig,
+				Items.titanium, FDBullets.titaniumBig
             		);
 			requirements(Category.turret, with(Items.copper, 135, Items.silicon, 20, Items.graphite, 47, Items.lead, 125));
 		}};
