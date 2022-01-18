@@ -38,7 +38,7 @@ public class ExampleJavaMod extends Mod{
     public ExampleJavaMod(){
 	Events.on(ClientLoadEvent.class, e -> {
 		Log.info("Loaded[stat] FrameDustry[] constructor.");
-        	Log.info("So, yeah, let's have fun together, hopefully... ?");
+        	Log.info("So, yeah, let's have fun together, hopefully... ? \n\n\n\n Not...");
 		//Log.info("E:"+e);
 		startScreen();
 	});
@@ -48,6 +48,7 @@ public class ExampleJavaMod extends Mod{
         new FDBlocks().load();
         new FDWeather().load();
         new FDItems().load();
+	new FDBullets().load();
         //new FDPlanets().load();
         //new FDSectors().load();
         Log.info("Loaded all Java files.");
