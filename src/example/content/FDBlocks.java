@@ -82,7 +82,7 @@ public class FDBlocks implements ContentList {
                 		Items.copper, FDBullets.copperBig,
 				Items.lead, FDBullets.leadBig,
                 		Items.graphite, FDBullets.denseBig,
-                		Items.pyratite, FDBullets.burnBig,
+                		Items.pyratite, FDBullets.burningBig,
                 		Items.silicon, FDBullets.homingBig,
 				Items.titanium, FDBullets.titaniumBig
             		);
