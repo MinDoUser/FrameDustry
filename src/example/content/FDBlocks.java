@@ -62,6 +62,7 @@ public class FDBlocks implements ContentList {
 	    );
 
             consumes.power(0.9f);
+	    //FDItems.exite is null, that results into copper?!?!?!
             outputItem = new ItemStack(FDItems.exite, 1);
         }};*/
 	bolt = new ItemTurret("Bolt"){{
@@ -79,12 +80,13 @@ public class FDBlocks implements ContentList {
 			shootShake = 2f;
 			shootSound = Sounds.pew;
 			ammo(
-                		Items.copper, FDBullets.copperBig,
-				Items.lead, FDBullets.leadBig,
-                		Items.graphite, FDBullets.denseBig,
-                		Items.pyratite, FDBullets.burningBig,
-                		Items.silicon, FDBullets.homingBig,
-				Items.titanium, FDBullets.titaniumBig
+                		Items.copper, Bullets.standardCopper
+				//Own bullets create a NullPointer!?
+				//Items.lead, FDBullets.leadBig,
+                		//Items.graphite, FDBullets.denseBig,
+                		//Items.pyratite, FDBullets.burningBig,
+                		//Items.silicon, FDBullets.homingBig,
+				//Items.titanium, FDBullets.titaniumBig
             		);
 			requirements(Category.turret, with(Items.copper, 135, Items.silicon, 20, Items.graphite, 47, Items.lead, 125));
 		}};
