@@ -26,8 +26,6 @@ import mindustry.world.draw.*;
 import example.world.blocks.logic.*;
 
 import example.ExampleJavaMod;
-import example.content.*;
-import example.content.FDItems;
 
 import static mindustry.type.ItemStack.with;
 
@@ -36,11 +34,11 @@ public class FDBlocks implements ContentList {
 	 //turret
 	  bolt,
     	//walls
-    	leadwall,
+    	leadwall;
 	//crafting
 	//exiteSmelter;
 	//Logic
-	infoMessage;
+	//infoMessage;
   	@Override
 	public void load() {
 		/*
@@ -80,13 +78,12 @@ public class FDBlocks implements ContentList {
 			shootShake = 2f;
 			shootSound = Sounds.pew;
 			ammo(
-                		Items.copper, Bullets.standardCopper
-				//Own bullets create a NullPointer!?
-				//Items.lead, FDBullets.leadBig,
-                		//Items.graphite, FDBullets.denseBig,
-                		//Items.pyratite, FDBullets.burningBig,
-                		//Items.silicon, FDBullets.homingBig,
-				//Items.titanium, FDBullets.titaniumBig
+                		//Items.copper, Bullets.standardCopper
+				Items.lead, FDBullets.leadBig,
+                		Items.graphite, FDBullets.denseBig,
+                		Items.pyratite, FDBullets.burningBig,
+                		Items.silicon, FDBullets.homingBig,
+				Items.titanium, FDBullets.titaniumBig
             		);
 			requirements(Category.turret, with(Items.copper, 135, Items.silicon, 20, Items.graphite, 47, Items.lead, 125));
 		}};
@@ -96,11 +93,11 @@ public class FDBlocks implements ContentList {
 			health = 350;
 			size = 1;
 		}};
-  		infoMessage = new WaveInfoMessage("info-message") {{
+  		/*infoMessage = new WaveInfoMessage("info-message") {{
 			requirements(Category.logic, with(Items.copper, 1));
 			localizedName = "Wave Information Message";
 			health = 40;
 			size = 1;
-		}};
+		}};*/
   }
 }
