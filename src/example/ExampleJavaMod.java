@@ -28,6 +28,7 @@ public class ExampleJavaMod extends Mod{
 			inner.table(table -> {
 				table.table(t -> {
 					t.add("$FD-WelcomeText");
+					t.row();
 					t.button("< Ready >", dialog::hide).size(150f, 100f);
 				}).grow();
 			}).fill();
@@ -45,10 +46,10 @@ public class ExampleJavaMod extends Mod{
     }
     @Override
     public void loadContent(){
-        new FDBlocks().load();
-        new FDWeather().load();
-        new FDItems().load();
 	new FDBullets().load();
+	new FDItems().load();
+	new FDBlocks().load();
+        new FDWeather().load();
         //new FDPlanets().load();
         //new FDSectors().load();
         Log.info("Loaded all Java files.");
